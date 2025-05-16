@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="images" href="images/geladeira.png" />
+  </head>
+  <body>
+    <div class="topnavbar">
+      <img src="images/geladeira.png" height="70px" />
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a class="l" id="l" href="login.html">Login</a>
+    </div>
+    <div class="fundo-login">
+      <center>
+      <div class="login-container">
+        <h2>Login</h2>
+        
+        <form>
+          <input type="text" placeholder="Usuário ou E-mail" required>
+          <input type="password" id="senha" placeholder="Senha">
+
+          <label class="show-password">
+            <input type="checkbox" onclick="toggleSenha()" /> Mostrar senha
+          </label>
+          
+          <button type="submit">Entrar</button>
+          <button type="button" class="create-account" onclick="window.location.href='cadastro.html'">Criar Conta</button>
+        </form>
+      </div>
+      </center>
+    </div>
+  <script>
+    function toggleSenha() {
+    const senha = document.getElementById('senha');
+    senha.type = senha.type === 'password' ? 'text' : 'password';
+  }
+  </script>
+
+    </div>
+  
+    <div class="footer">
+      <a>contato: freshstock@gmail.com</a>
+
+      <p class="copy">&copy; todos os diretos reservados FreshStock</p>
+    </div>
+  </body>
+</html>

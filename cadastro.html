@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="images" href="images/geladeira.png" />
+  </head>
+  <body>
+    <div class="topnavbar">
+      <img src="images/geladeira.png" height="70px" />
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a class="l" id="l" href="login.html">Login</a>
+    </div>
+    <div class="fundo-login">
+      <center>
+      <div class="register-container">
+        <h2>Cadastro</h2>
+
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="text" placeholder="Usuário" required />
+        <input id="senha" type="password" placeholder="Senha" required />
+        <input id="confirm-senha" type="password" placeholder="Confirmar senha" required />
+            
+        <label class="show-password">
+          <input type="checkbox" onclick="toggleSenha()" /> Mostrar senha
+        </label>
+      
+        <button class="register-btn">Cadastrar</button>
+        <button class="back-btn" onclick="window.location.href='login.html'">Voltar para Login</button>
+      </div>
+      </center>
+    </div>
+    
+  <script>
+    function toggleSenha() {
+    const senha = document.getElementById('senha');
+    senha.type = senha.type === 'password' ? 'text' : 'password';
+  }
+  </script>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+    <a>contato: freshstock@gmail.com</a>
+
+    <p class="copy">&copy; todos os diretos reservados FreshStock</p>
+    </div>
+  </body>
+</html>

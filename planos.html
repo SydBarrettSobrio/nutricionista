@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="images" href="images/geladeira.png" />
+    <style>
+      .agrupar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1250px;
+        width: 100%;
+        padding: 32px;
+      }
+      .plano {
+        padding: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 350px;
+        border-radius: 16px;
+        height: 550px;
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #ffffff70;
+      }
+      .corpo-plano {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+      }
+      p {
+        margin: 0px;
+        font-size: 20px;
+      }
+      .categoria {
+        font-size: 64px;
+        text-align: left;
+        font-weight: 600;
+        color: #3c4e70;
+      }
+      li {
+        font-size: 20px;
+      }
+      .Banners {
+        display: flex;
+        justify-content: center;
+      }
+      .quantidade {
+        flex-direction: column;
+        justify-content: left;
+        display: flex;
+        background-color: #74c0ff;
+        width: 95%;
+        border-radius: 16px;
+        padding: 8px;
+        padding-right: -815px;
+      }
+
+      .ferramenta {
+        padding: 8px;
+      }
+
+      #planos {
+        font-size: 100px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 75px;
+        margin-bottom: 50px;
+        color: #3c4e70;
+      }
+
+      .PlanBut {
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 20px;
+        border: 0px;
+        background-color: #74c0ff;
+        margin-left: auto;
+      }
+
+      .planoFooter {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnavbar">
+      <img src="images/geladeira.png" height="68px" />
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a class="l" id="l" href="login.html">Login</a>
+    </div>
+
+    <p id="planos">Planos</p>
+
+    <div class="Banners">
+      <div class="agrupar">
+        <!-- Plano Free -->
+        <div class="plano">
+          <div class="corpo-plano">
+            <p class="categoria">Free</p>
+
+            <p>
+              <justify>
+                Para quem precisa controlar pequenos estoques de maneira
+                descomplicada</justify
+              >
+            </p>
+
+            <div class="quantidade">
+              <p class="texto">
+                <li>Até 200 items no estoque</li>
+                <li>Acesso de um usuario</li>
+              </p>
+            </div>
+
+            <div class="ferramenta">
+              <p class="texto">
+                <li>Ferramenta de estoque</li>
+                <li>Apenas um estoque</li>
+              </p>
+            </div>
+          </div>
+          <div class="planoFooter">
+            <p style="font-size: 28px; font-weight: 600">Gratuito</p>
+            <a class="PlanBut">Avançar</a>
+          </div>
+        </div>
+        <!-- Plano Médio -->
+        <div class="plano">
+          <div class="corpo-plano">
+            <p class="categoria">Silver</p>
+
+            <p>
+              Para quem quer mais controle, com recursos que facilitam o dia a
+              dia.
+            </p>
+            <div class="quantidade">
+              <p class="texto">
+                <li>Até 2500 itens no estoque</li>
+                <li>Acesso de até cinco usuarios</li>
+              </p>
+            </div>
+
+            <div class="ferramenta">
+              <p class="texto">
+                <li>Tudo do plano Free</li>
+                <li>Até 4 estoques diferentes</li>
+                <li>Diferentes tipos de usuarios</li>
+              </p>
+            </div>
+          </div>
+          <div class="planoFooter">
+            <p style="font-size: 28px; font-weight: 600">R$ 57,00</p>
+            <a class="PlanBut">Avançar</a>
+          </div>
+        </div>
+        <!-- Plano Máximo -->
+        <div class="plano">
+          <div class="corpo-plano">
+            <p class="categoria">Gold</p>
+
+            <p>
+              Para quem precisa de performance total e automações inteligentes.
+            </p>
+
+            <div class="quantidade">
+              <p class="texto">
+                <li>Numero Ilimitado de Itens</li>
+                <li>Acesso Ilimitado de usuarios</li>
+              </p>
+            </div>
+
+            <div class="ferramenta">
+              <p class="texto">
+                <li>Tudo do plano Silver</li>
+                <li>Estoques Ilimitados</li>
+                <li>Prioridade nos chamados</li>
+                <li>Atendimento Personalizado</li>
+              </p>
+            </div>
+          </div>
+          <div class="planoFooter">
+            <p style="font-size: 28px; font-weight: 600">R$ 187,00</p>
+            <a class="PlanBut">Avançar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+      <a>contato: freshstock@gmail.com</a>
+
+      <p class="copy">&copy; todos os diretos reservados FreshStock</p>
+    </div>
+  </body>
+</html>
